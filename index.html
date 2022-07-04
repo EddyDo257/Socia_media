@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-css/all.css">
+    <link rel="stylesheet" href="font-css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/rightbar.css">
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/share.css">
+    <title>Social App</title>
+</head>
+
+<body>
+    <!-----------------------Top part--------------------------------------------------------------->
+    <div class="topbarContainer">
+        <div class="topbarLeft">
+            <span class="logo">Lamasocial</span>
+        </div>
+        <div class="topbarCenter">
+            <div class="searchbar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for friend, post or video" class="searchInput" />
+            </div>
+        </div>
+        <div class="topbarRight">
+            <div class="topbarLinks">
+                <span class="topbarLink">Homepage</span>
+                <span class="topbarLink">Timeline</span>
+            </div>
+            <div class="topbarIcons">
+                <div class="topbarIconItem">
+                    <i class="fa-solid fa-user-large"></i>
+                    <span class="topbarIconBadge">1</span>
+                </div>
+                <div class="topbarIconItem">
+                    <i class="fa-solid fa-message"></i>
+                    <span class="topbarIconBadge">2</span>
+                </div>
+                <div class="topbarIconItem">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="topbarIconBadge">1</span>
+                </div>
+            </div>
+            <img src="./assets/1.jpg" alt="" class="topbarImg" />
+        </div>
+    </div>
+    <!-----------------------Center part--------------------------------------------------------------->
+    <div class="homeContainer">
+        <!-----------------------Center/ sibar part--------------------------------------------------------------->
+        <div class="sidebar">
+            <div class="sidebarWrapper">
+                <ul class="sidebarList">
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-rss sidebarIcon"></i>
+                        <span class="sidebarListItemText">Feed</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-message sidebarIcon"></i>
+                        <span class="sidebarListItemText">Chats</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-circle-play sidebarIcon"></i>
+                        <span class="sidebarListItemText">Videos</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-user-group sidebarIcon"></i>
+                        <span class="sidebarListItemText">Groups</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-bookmark sidebarIcon"></i>
+                        <span class="sidebarListItemText">Bookmarks</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-circle-question sidebarIcon"></i>
+                        <span class="sidebarListItemText">Questions</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-briefcase sidebarIcon"></i>
+                        <span class="sidebarListItemText">Jobs</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-calendar-day sidebarIcon"></i>
+                        <span class="sidebarListItemText">Events</span>
+                    </li>
+                    <li class="sidebarListItem">
+                        <i class="fa-solid fa-graduation-cap sidebarIcon"></i>
+                        <span class="sidebarListItemText">Courses</span>
+                    </li>
+                </ul>
+                <button class="sidebarButton">Show More</button>
+                <hr class="sidebarHr" />
+                <ul class="sidebarFriendList">
+                    <li class="sidebarFriend">
+                        <img class="sidebarFriendImg" src="./assets/1.jpg" alt="">
+                        <span class="sidebarFriendName">Eddy Donald</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-----------------------Center/ feed part--------------------------------------------------------------->
+        <div class="feed">
+            <div class="feedWrapper">
+                <!----------------------- Center/ share part--------------------------------------------------------------->
+                <div class="share">
+                    <div class="shareWrapper">
+                        <div class="shareTop">
+                            <img class="shareProfileImg" src="./assets/1.jpg" alt="" />
+                            <input placeholder="What's in your mind Safak?" class="shareInput" />
+                        </div>
+                        <hr class="shareHr" />
+                        <div class="shareBottom">
+                            <div class="shareOptions">
+                                <div class="shareOption">
+                                    <i class="fa-solid fa-image shareIcon" style="color: #FF6347;"></i>
+                                    <span class="shareOptionText">Photo</span>
+                                </div>
+                                <div class="shareOption">
+                                    <i class="fa-solid fa-tag shareIcon" style="color: blue;"></i>
+                                    <span class="shareOptionText">Tag</span>
+                                </div>
+                                <div class="shareOption">
+                                    <i class="fa-solid fa-location-dot shareIcon" style="color: green;"></i>
+                                    <span class="shareOptionText">Location</span>
+                                </div>
+                                <div class="shareOption">
+                                    <i class="fa-regular fa-face-laugh-beam shareIcon" style="color: #FFD772;"></i>
+                                    <span class="shareOptionText">Feelings</span>
+                                </div>
+                            </div>
+                            <button class="shareButton">Share</button>
+                        </div>
+                    </div>
+                </div>
+                <!-----------------------Center /post part--------------------------------------------------------------->
+                <div class="post">
+                    <div class="postWrapper">
+                        <div class="postTop">
+                            <div class="postTopLeft">
+                                <img class="postProfileImg" src="./assets/1.jpg" alt="" />
+                                <span class="postUsername">Eddy</span>
+                                <span class="postDate">5 min Ago</span>
+                            </div>
+                            <div class="postTopRight">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <div class="postCenter">
+                            <span class="postText">{First post guys</span>
+                            <img class="postImg" src="./assets/1.jpg" alt="" />
+                        </div>
+                        <div class="postBottom">
+                            <div class="postBottomLeft">
+                                <img class="likeIcon" src="./assets/like.png" onClick={likeHandler} alt="" />
+                                <img class="likeIcon" src="./assets/heart.png" onClick={likeHandler} alt="" />
+                                <span class="postLikeCounter">6 people like it</span>
+                            </div>
+                            <div class="postBottomRight">
+                                <span>Click to contact us </span>
+                                <img class="likeIcon" src="./assets/whatsapp.png" onclick="red()" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="postWrapper">
+                        <div class="postTop">
+                            <div class="postTopLeft">
+                                <img class="postProfileImg" src="./assets/1.jpg" alt="" />
+                                <span class="postUsername">Eddy</span>
+                                <span class="postDate">5 min Ago</span>
+                            </div>
+                            <div class="postTopRight">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <div class="postCenter">
+                            <span class="postText">{First post guys</span>
+                            <img class="postImg" src="./assets/1.jpg" alt="" />
+                        </div>
+                        <div class="postBottom">
+                            <div class="postBottomLeft">
+                                <img class="likeIcon" src="./assets/like.png" onClick={likeHandler} alt="" />
+                                <img class="likeIcon" src="./assets/heart.png" onClick={likeHandler} alt="" />
+                                <span class="postLikeCounter">6 people like it</span>
+                            </div>
+                            <div class="postBottomRight">
+                                <span class="postCommentText">44 comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="postWrapper">
+                        <div class="postTop">
+                            <div class="postTopLeft">
+                                <img class="postProfileImg" src="./assets/1.jpg" alt="" />
+                                <span class="postUsername">Eddy</span>
+                                <span class="postDate">5 min Ago</span>
+                            </div>
+                            <div class="postTopRight">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                        <div class="postCenter">
+                            <span class="postText">{First post guys</span>
+                            <img class="postImg" src="./assets/1.jpg" alt="" />
+                        </div>
+                        <div class="postBottom">
+                            <div class="postBottomLeft">
+                                <img class="likeIcon" src="./assets/like.png" onClick={likeHandler} alt="" />
+                                <img class="likeIcon" src="./assets/heart.png" onClick={likeHandler} alt="" />
+                                <span class="postLikeCounter">6 people like it</span>
+                            </div>
+                            <div class="postBottomRight">
+                                <span class="postCommentText">00 comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------------Center /right part--------------------------------------------------------------->
+        <div class="rightbar">
+            <div class="rightbarWrapper">
+                <div class="birthdayContainer">
+                    <img class="birthdayImg" src="./assets/gift.png" alt="" />
+                    <span class="birthdayText">
+                        <b>Pola Foster</b> and <b>3 other friends</b> have a birhday today.
+                    </span>
+                </div>
+                <img class="rightbarAd" src="./assets/ad.png" alt="" />
+                <h4 class="rightbarTitle">Online Friends</h4>
+                <ul class="rightbarFriendList">
+                    <li class="rightbarFriend">
+                        <div class="rightbarProfileImgContainer">
+                            <img class="rightbarProfileImg" src="./assets/1.jpg">
+                            <span class="rightbarOnline"></span>
+                        </div>
+                        <span class="rightbarUsername">Eddy Donald</span>
+                    </li>
+                </ul>
+                <ul class="rightbarFriendList">
+                    <li class="rightbarFriend">
+                        <div class="rightbarProfileImgContainer">
+                            <img class="rightbarProfileImg" src="./assets/1.jpg">
+                            <span class="rightbarOnline"></span>
+                        </div>
+                        <span class="rightbarUsername">Eddy Donald</span>
+                    </li>
+                </ul>
+                <ul class="rightbarFriendList">
+                    <li class="rightbarFriend">
+                        <div class="rightbarProfileImgContainer">
+                            <img class="rightbarProfileImg" src="./assets/1.jpg">
+                            <span class="rightbarOnline"></span>
+                        </div>
+                        <span class="rightbarUsername">Eddy Donald</span>
+                    </li>
+                </ul>
+                <ul class="rightbarFriendList">
+                    <li class="rightbarFriend">
+                        <div class="rightbarProfileImgContainer">
+                            <img class="rightbarProfileImg" src="./assets/1.jpg">
+                            <span class="rightbarOnline"></span>
+                        </div>
+                        <span class="rightbarUsername">Eddy Donald</span>
+                    </li>
+                </ul>
+                <ul class="rightbarFriendList">
+                    <li class="rightbarFriend">
+                        <div class="rightbarProfileImgContainer">
+                            <img class="rightbarProfileImg" src="./assets/1.jpg">
+                            <span class="rightbarOnline"></span>
+                        </div>
+                        <span class="rightbarUsername">Eddy Donald</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function red() {
+            window.location = "https://wa.link/nh3xd7";
+        }
+    </script>
+</body>
+
+</html>
